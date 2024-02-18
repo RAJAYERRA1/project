@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const sqlite3 = require("sqlite3").verbose();
-
+const cors = require('cors');
 const app = express();
 const { open } = require("sqlite");
 const path = require("path");
