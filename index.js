@@ -9,6 +9,9 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dbPath = (__dirname, "statesDatabase.db");
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 let dataBase;
 
